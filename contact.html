@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>課題2-2</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css" media="screen">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <script src="./test.js"></script>
+  <link href=”https://use.fontawesome.com/releases/v5.7.2/css/all.css” rel=”stylesheet”>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="h-title">
+        <img  class="h-logo" src="images/logo (2).png" alt="title">
+        <span class="material-icons" id="close">close</span>
+        <!-- ハンバーガーメニュー-->
+        <div class="h-menu">
+          <span class="material-icons" id="open">menu</span>
+        </div>
+      </div>
+      <nav class="h-nav">
+        <ul class="h-ul">
+          <li class="h-list">
+            <a href="index.html">
+              <div class="h-list-box activ">
+              <div class="h-list-top">
+                ホーム
+              </div>
+              <div class="h-list-bottom">
+                HOME
+              </div> 
+              </div>
+            </a>
+          </li>
+          <li class="h-list">
+            <a href="company.html">
+              <div class="h-list-box">
+              <div class="h-list-top">
+                会社概要
+              </div>
+              <div class="h-list-bottom">
+                COMPANY
+              </div> 
+              </div>
+            </a>
+          </li>
+          <li class="h-list">
+            <a href="service.html">
+              <div class="h-list-box">
+              <div class="h-list-top">
+                サービス
+              </div>
+              <div class="h-list-bottom">
+                SERVICE
+              </div> 
+              </div>
+            </a>
+          </li>
+          <li class="h-list">
+            <a href="recrit.html">
+              <div class="h-list-box">
+              <div class="h-list-top">
+                採用情報
+              </div>
+              <div class="h-list-bottom">
+                RECRIT
+              </div> 
+              </div>
+            </a>
+          </li>
+          <li class="h-list">
+            <a href="link.html">
+              <div class="h-list-box">
+              <div class="h-list-top">
+                リンク
+              </div>
+              <div class="h-list-bottom">
+                LINK
+              </div> 
+              </div>
+            </a>
+          </li>
+          <li class="h-list">
+            <a href="contact.html">
+              <div class="h-list-box">
+              <div class="h-list-top">
+                お問い合わせ
+              </div>
+              <div class="h-list-bottom">
+                CONTACT
+              </div> 
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- <div class="h-imagebox">
+        <img src="images/1 (2).jpg" class="h-image" alt="ヘッダーの画像">
+      </div> -->
+    </header>
+    <!-- ハンバーガーメニュー -->
+    <div class="overlay">
+      <nav class="h-nav2">
+        <ul class="h-ul2">
+          <li class="h-li2">
+            <a href="index.html">
+              <div class="h-list-box2">
+                 <div class="h-list-top2">ホーム</div>
+                 <div class="h-list-bottom2">HOME</div>
+              </div>
+            </a>
+          </li>
+          <li class="h-li2">
+            <a href="company.html">
+              <div class="h-list-box2">
+                 <div class="h-list-top2">会社概要</div>
+                 <div class="h-list-bottom2">CONPANY</div>
+              </div>
+            </a>
+          </li>
+          <li class="h-li2">
+            <a href="service.html">
+              <div class="h-list-box2">
+                 <div class="h-list-top2"> サービス</div>
+                 <div class="h-list-bottom2">SERVICE</div>
+              </div>
+            </a>
+          </li>
+          <li class="h-li2">
+            <a href="recrit.html">
+              <div class="h-list-box2">
+                 <div class="h-list-top2">採用情報</div>
+                 <div class="h-list-bottom2">RECRIT</div>
+              </div>
+            </a>
+          </li>
+          <li class="h-li2">
+            <a href="link.html">
+              <div class="h-list-box2">
+                 <div class="h-list-top2">リンク</div>
+                 <div class="h-list-bottom2">LINK</div>
+              </div>
+            </a>
+          </li>
+          <li class="h-li2">
+            <a href="contact.html">
+              <div class="h-list-box2">
+                 <div class="h-list-top2">お問い合わせ</div>
+                 <div class="h-list-bottom2">CONTACT</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="content">
+      <main class="main">
+        <section class="m-section">
+          <h2 class="m-h2">お問い合わせ</h2>
+          <p class="m-p">当ページと同じ３項目のお問い合わせフォーム（自動フォーム試用版）を簡単に使えるようにセットしています。</p>
+          <p class="m-p"><span class="m-point">※当ページ（contact.html）はフォームの見本ページです。実際の自動フォームには使いませんのでご注意下さい。</span></p>
+          <p class="m-p"><span class="m-point">■自動フォームを使う場合（※編集に入る前にご確認下さい）</span><br>
+            あなたのメールアドレス設定と、簡単な編集だけで使えます。<a href="#" class="m-loglink">こちらのマニュアルをご覧下さい。</a></p>
+            <p class="m-p"><span class="m-point">■自動フォームを使わない場合</span><br>
+              テンプレートに梱包されている「form.html」「confirm.html」「finish.html」の3枚のファイルを削除して下さい。
+            </p>
+          <p class="m-p"></p>
+          <table class="m-table">
+            <tr class="m-tr">
+              <th class="m-th">お名前※</th>
+              <td class="m-td">
+                <input type="name" name="名前">
+              </td>
+            </tr>
+            <tr class="m-tr">
+              <th class="m-th">メールアドレス※</th>
+              <td class="m-td">
+                <input type="email" name="メールアドレス">
+              </td>
+            </tr>
+            <tr class="m-tr">
+              <th class="m-th">お問い合わせ詳細※</th>
+              <td class="m-td">
+                <textarea name="詳細" id="" cols="30" rows="10"></textarea>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </main>
+      <aside class="side">
+        <div class="s-frambox">
+          <h4 class="s-h4">Menu</h4>
+          <ul class="s-ul">
+            <li class="s-li"><a href="#">メニュー</a></li>
+            <li class="s-li"><a href="#">メニュー</a></li>
+            <li class="s-li"><a href="#">メニュー</a></li>
+          </ul>
+        </div>
+        <div class="s-no-frambox">
+          <h4 class="s-h4">Menu</h4>
+          <ul class="s-ul">
+            <li class="s-li"><a href="#">メニュー</a></li>
+            <li class="s-li"><a href="#">メニュー</a></li>
+            <li class="s-li"><a href="#">メニュー</a></li>
+          </ul>
+        </div>
+        <div class="s-frambox">
+          <h4 class="s-h4">製品情報</h4>
+          <ul class="s-ul">
+            <li class="s-li"><a href="#">              
+                <img  class="s-img" src="images/sample1.jpg" alt="製品情報の画像">
+                <div class="s-li-title">製品情報</div>
+                <div class="s-li-description">簡単な説明をここにいれます
+              </a></li>
+            <li class="s-li"><a href="#">              
+                <img  class="s-img" src="images/sample1.jpg" alt="製品情報の画像">
+                <div class="s-li-title">製品情報</div>
+                <div class="s-li-description">簡単な説明をここにいれます
+              </a></li>
+            <li class="s-li"><a href="#">              
+                <img  class="s-img" src="images/sample1.jpg" alt="製品情報の画像">
+                <div class="s-li-title">製品情報</div>
+                <div class="s-li-description">簡単な説明をここにいれます
+              </a></li>
+          </ul>
+        </div>
+        <div class="s-no-frambox">
+          <h4 class="s-h4">製品情報</h4>
+          <ul class="s-ul">
+            <li class="s-li"><a href="#">              
+                <img  class="s-img" src="images/sample1.jpg" alt="製品情報の画像">
+                <div class="s-li-title">製品情報</div>
+                <div class="s-li-description">簡単な説明をここにいれます
+              </a></li>
+              <li class="s-li"><a href="#">              
+                <img  class="s-img" src="images/sample1.jpg" alt="製品情報の画像">
+                <div class="s-li-title">製品情報</div>
+                <div class="s-li-description">簡単な説明をここにいれます
+              </a></li>
+              <li class="s-li"><a href="#">              
+                <img  class="s-img" src="images/sample1.jpg" alt="製品情報の画像">
+                <div class="s-li-title">製品情報</div>
+                <div class="s-li-description">簡単な説明をここにいれます
+              </a></li>
+              <div class="s-frambox">
+                <h4 class="s-h4">運営</h4>
+                <div class="s-company-title">株式会社SAMPLE COMPANY</div>
+                <div class="s-company-info">
+                  東京都XX区XXXXビル3F<br>
+                  TEL:03-0000-0000<br>
+                  (AM9:00〜PM5:00 土日祝休み)
+                </div>
+              </div>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <footer class="footer">
+      Copyright© <a href="#" class="footer-a">SAMPLE SITE</a> All Rights Reserved.
+        <div class="footer-under">
+          《<a href="#">Web Design:Template-Party</a>》
+        </div> 
+    </footer>
+  </div>
+   <!-- ページトップに戻る方法 -->
+   <div id="page_top"><a href="#"></a></div>
+  </div>
+
+  <!-- jquercdn -->
+  <script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script type=”text/JavaScript” src=”パス/ファイル名.js”></script>
+<script src="js/main.js"></script>
+</body>
+</html>

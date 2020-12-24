@@ -1,0 +1,517 @@
+/* リセットcss */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* リセットcss終了 */
+
+
+
+body{
+  background-color: #bababa;
+}
+.container{
+  width:1200px;
+  margin:0 auto;
+  background-color:white;
+}
+.h-title{
+  height:100px;
+  border-top:5px solid blue;
+  position: relative;
+}
+.h-title .h-logo{
+  width:300px;
+  position: absolute;
+  top:50%;
+  left:4%;
+  transform:translateY(-50%);
+}
+/* ハンバーガーメニュー */
+.h-menu{
+  position:absolute;
+  top:50%;
+  right:4%;
+  transform:translateY(-50%);
+  display:none;
+}
+.h-menu #open{
+  font-size:30px;
+  font-weight:bold;
+  border:1px solid black;
+  padding:8px;
+  cursor:pointer;
+}
+.overlay{
+  position: absolute;
+  margin-top:100px;
+  margin-bottom:500px;
+  top:0px;
+  right:0px;
+  left:0%;
+  opacity:0.8;
+  pointer-events: none;
+}
+#open.hide{
+  display:none;
+}
+.overlay.show{
+  opacity:1;
+  pointer-events: auto;
+  z-index: 20;
+  display:none;
+  /* position: fixed; */
+}
+#close.show2{
+  opacity:1;
+  pointer-events: auto;
+  display:inline;
+}
+#close{
+  color:black;
+  position:absolute;
+  top:50%;
+  right:4%;
+  transform:translateY(-50%);
+  display:none;
+  border:1px solid black;
+  padding:8px;
+  font-size:30px;
+  cursor:pointer;
+  display:none;
+}
+.overlay a{
+  text-decoration: none;
+}
+.overlay li{
+  /* position: fixed;
+  top:100px;  */
+  display:block;
+  opacity:0;
+  transform:translateY(16px);
+  transition:opacity .3s, transfrom .3s;
+  background-color:rgba(0,0,0,0.8 );
+  border-bottom:1px solid white;
+  padding:25px;
+  z-index: 100;
+  
+}
+.h-li2{
+  width:100%;
+}
+.h-list-box2{
+  width:100%;
+}
+.h-list-top2{
+  margin:4px 0;
+  font-size:20px;
+  color:white;
+}
+.h-list-bottom2{
+  font-size:12px;
+  margin-top:10px;
+  margin-left:2px;
+  color:white;
+}
+.overlay.show li{
+  opacity:1;
+  transform:none;
+}
+.overlay.show li:nth-child(1){
+  transition-delay:.1s;
+}
+.overlay.show li:nth-child(2){
+  transition-delay:.2s;
+}
+.overlay.show li:nth-child(3){
+  transition-delay:.3s;
+}
+.overlay.show li:nth-child(4){
+  transition-delay:.4s;
+}
+.overlay.show li:nth-child(5){
+  transition-delay:.5s;
+}
+.overlay.show li:nth-child(6){
+  transition-delay:.6s;
+}
+/* ヘッダーリスト */
+.h-ul{
+  /* liの要素の行間が広いので狭く指定することによって、カラムオチを防ぐ */
+  letter-spacing:-0.4em;
+  /* margin-bottom:10px; */
+}
+.h-nav{
+  border-top:1px solid #d2d2d2;
+}
+.h-list{
+  display:inline-block;
+  /* リストの横幅を自動計算 */
+  width:calc(100%/6);
+  position: relative;
+  letter-spacing:normal;
+  /* position: absolute;を設定すると親要素の高さが0になるので、改めて高さを設定する */
+  height:64px;
+  border-right:1px solid #d2d2d2;
+  /* ボーダーをli要素の外につけてカラム落ちしてしまったので、ボーダーを要素の中に指定すること */
+  box-sizing: border-box;
+  /* navと写真の間の余白をなくす */
+  vertical-align: bottom;
+  border-bottom:1px solid #d2d2d2;
+}
+.h-list-box{
+  /* 要素を中央に寄せる */
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:90%;
+  text-align:center;
+}
+
+.h-list-top{
+  font-size:15px;
+  color: #666666;
+  margin-bottom:4px;
+}
+.h-list-bottom{
+  font-size:10px;
+  color: #bababa;
+  text-align:center;
+}
+.h-list:hover .h-list-top{
+  color: #0e36ca;
+}
+.h-list:hover{
+  background-color:#e6ebfa;
+}
+.h-list:hover .h-list-box:before{
+  content:"";
+  width:3px;
+  height:100%;
+  position: absolute;
+  background-color: #0e36ca;
+  left:4px;
+}
+
+/* ヘッダーイメージ写真 */
+.h-image{
+  max-width:100%;
+  height:auto;
+}
+
+/* テーブル表 */
+.m-table{
+  width:100%;
+}
+.m-th,.m-td{
+  border: 1px solid #d2d2d2;
+  padding:15px;
+}
+.m-th1,.m-td1{
+  padding:30px 10px;
+}
+.m-th{
+  width:25%;
+  text-align:center;
+  vertical-align:middle;
+}
+.m-td{
+  text-align:left;
+  width:75%;
+}
+/* thが１行の場合 */
+.m-h5{
+  border:1px solid #d2d2d2;
+  padding:15px;
+  border-bottom:none;
+  font-size:15px;
+  margin-top:15px;
+}
+/* お問い合わせフォーム */
+input{
+  width:60%;
+}
+textarea{
+  width:90%;
+}
+
+/* メイン */
+.content{
+  padding:24px;
+}
+.main{
+  float:left;
+  width:70%;
+  /* background-color: blue; */
+}
+.m-h2{
+  background-color:#0F37D0;
+  color:white;
+  padding:14px 12px 14px 24px;
+  border-radius:4px;
+  margin-bottom:15px;
+}
+/* h2要素の横にボーダーを付ける */
+.m-h2::first-letter{
+  border-left:3px solid #8A9DF0;
+  padding-left:20px;
+}
+.m-h3{
+  padding:14px 12px 14px 24px;
+  background-color:#F3F3F3;
+  color:#808080;
+  font-size:17px;
+  border:1px solid #CCCCCC;
+  border-radius:4px;
+  margin:15px 0;
+}
+.m-info-date{
+  float:left;
+  color:#0e36ca;
+  padding:8px 32px 8px 0;
+  font-size:15px;
+}
+.m-info-content{
+  padding:8px;
+  border-bottom:1px solid #ccc;
+  font-size:15px;
+}
+.m-info-span{
+  background-color:red;
+  color:white;
+  padding:2px 4px;
+  font-size:11px;
+  border-radius:4px;
+}
+.m-log{
+  text-align:right;
+  padding-top:24px;
+}
+.m-loglink{
+  color: #666666;
+}
+.m-section{
+  color: #666666;
+  padding-bottom:24px;
+}
+.m-p{
+  color:#666;
+  font-size:14px;
+  margin:6px 16px;
+  line-height:2;
+}
+.m-point{
+  color:red;
+  font-weight:bold;
+}
+.m-h3 span{
+  font-weight:normal;
+}
+
+.m-p-background{
+  background-color:#CCCCCC;
+  padding:3px;
+  border-radius:5px;
+  display:inline-block;
+}
+.side{
+  /* background-color:green; */
+  float:right;
+  width:25%;
+}
+.s-frambox{
+  padding:10px;
+  border:1px solid #D2D2D2;
+  background-color:#FAF9F9;
+  margin-bottom:24px;
+  color:#666666;
+}
+.s-no-frambox{
+  /* padding:10px; */
+  margin-bottom:24px;
+  color:#666666;
+  /* background-color:#FAF9F9; */
+}
+.s-h4{
+  padding:28px 10px;
+  background: #eeeeee;
+  border-top:5px solid blue;
+  border-bottom:1px solid #d2d2d2;
+}
+.s-li{
+  padding:15px;
+  border-bottom:1px solid #D2D2D2;
+  overflow:hidden;
+}
+.s-li a{
+  text-decoration:none;
+  color:#666666;
+}
+.s-li:hover{
+  background:white;
+}
+.s-li a:hover{
+  color:blue;
+}
+.s-img{
+  width:20%;
+  float:left;
+  margin-right:5px;
+}
+.s-li-title{
+  color:blue;
+  font-size:11px;
+}
+.s-li-description{
+  font-size:11px;
+}
+.s-company-title{
+  font-weight:bold;
+  font-size:15px;
+  text-align:center;
+  padding:10px;
+}
+.s-company-info{
+  font-size:11px;
+  text-align:center;
+  padding-bottom:10px;
+}
+/* フッター */
+.footer{
+  text-align:center;
+  font-size:13px;
+  padding:16px 0;
+  color: white;
+  clear: both;
+  background:blue;
+  line-height:2;
+}
+.footer a:hover{
+  color:blue;
+}
+.footer-under{
+  font-size:12px;
+}
+
+.footer a{
+  color:white;
+  text-decoration:none;
+}
+/* サンプルカード */
+.card{
+  border:1px solid #d2d2d2;
+  padding:20px;
+  overflow:hidden;
+  position:relative;
+  box-shadow:0px 5px 10px #ccc;
+  background:linear-gradient(#fff,#ddd);
+}
+/* サンプルカード動作 */
+.card:hover{
+  box-shadow:0px 10px 20px #ccc;
+  transform:translateY(-5px);
+  transition:0.3s;
+}
+.card img{
+  width:25%;
+  float:left;
+  margin-right:10px;
+}
+.m-h4{
+  color:blue;
+}
+#card-a{
+  text-decoration:none;
+  color:#666;
+}
+.card::before{
+  content:"→";
+  position:absolute;
+  top:20px;
+  right:20px;
+  color:white;
+  background:#666;
+  width:30px;
+  height:30px;
+  line-height:30px;
+  text-align:center; 
+}
+
+
+/* ページトップに戻るボタン */
+#page_top{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: rgba(0.0,0,0.8); /*ボタンの色*/
+  opacity: 0.6;
+  display:none;
+  }
+  #page_top a{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  }
+  #page_top a::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: 'f062'; /*アイコン*/
+  font-size: 25px;
+  color: #fff; /*アイコンの色*/
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  }
